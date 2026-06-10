@@ -40,11 +40,21 @@ class HomeScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                homeButton("HOME"),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const StudentScreen(),
+                      ),
+                    );
+                  },
+                  child: const Text("API USERS"),
+                ),
+
                 homeButton("SEARCH"),
               ],
             ),
-
             const SizedBox(height: 20),
 
             Row(
