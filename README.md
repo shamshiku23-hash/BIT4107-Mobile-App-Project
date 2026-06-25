@@ -1,4 +1,4 @@
-# real_app
+# event_handling
 
 A new Flutter project.
 
